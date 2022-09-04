@@ -9,6 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@capacitor/cli": "^4.1.0",
+    "@capacitor/core": "^4.1.0",
     "vue": "^3.2.37"
   },
   "devDependencies": {
