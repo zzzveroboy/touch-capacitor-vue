@@ -3,10 +3,11 @@
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 import HelloWorld from "./components/HelloWorld.vue";
 import { onMounted } from "vue";
-import { Capacitor } from "@capacitor/core";
+import { Device } from "@capacitor/device";
 
-onMounted(() => {
-  alert(Capacitor.getPlatform());
+onMounted(async () => {
+  const info = await Device.getInfo();
+  alert(JSON.stringify(info));
 });
 </script>
 
